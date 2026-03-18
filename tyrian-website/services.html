@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Tyrian Global</title>
+  <meta name="description" content="Tyrian Global offers comprehensive trading services — procurement, shipping, documentation, quality assurance, and trade finance for cement and steel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%23c9a84c'/><text y='72' font-size='64' font-family='serif' font-weight='700' fill='%230d1b2a' text-anchor='middle' x='50'>T</text></svg>" />
+  <style>
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      position: relative;
+      margin-top: 3rem;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 28px; left: 10%; right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+      z-index: 0;
+    }
+    .process-step {
+      text-align: center;
+      padding: 0 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .step-circle {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.2rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .process-step h4 { font-size: 0.9rem; color: var(--white); margin-bottom: 0.4rem; }
+    .process-step p { font-size: 0.78rem; color: rgba(255,255,255,0.45); line-height: 1.5; }
+    @media (max-width: 768px) {
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .process-steps::before { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">T</div>
+          <div class="logo-text">
+            <span class="logo-name">TYRIAN</span>
+            <span class="logo-sub">Global Trading</span>
+          </div>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Services</span>
+        </div>
+        <span class="section-label">What We Offer</span>
+        <h1>Complete Trade<br />Services</h1>
+        <p>From initial inquiry to final delivery, Tyrian Global manages every aspect of the commodity trading process — giving you one reliable partner for the entire journey.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROCESS ===== -->
+  <section style="background:var(--primary);padding:5rem 0;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:1rem;">
+        <span class="section-label">How We Work</span>
+        <h2 style="color:var(--white);">Our <span style="color:var(--accent);">Trading Process</span></h2>
+        <p style="color:rgba(255,255,255,0.5);max-width:560px;margin:1rem auto 0;">Every transaction follows a structured, transparent process designed to protect your interests at every step.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-circle">01</div>
+          <h4>Inquiry</h4>
+          <p>You share your product requirements, destination, and timeline</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">02</div>
+          <h4>Sourcing</h4>
+          <p>We identify and qualify the best matching suppliers globally</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">03</div>
+          <h4>Offer</h4>
+          <p>We provide a competitive, transparent CIF/FOB offer within 48h</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">04</div>
+          <h4>Shipment</h4>
+          <p>We arrange freight, inspection, and full documentation</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">05</div>
+          <h4>Delivery</h4>
+          <p>Product delivered to your port or facility, on time and to spec</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE DETAILS ===== -->
+  <section class="services-page">
+    <div class="container">
+
+      <!-- Procurement -->
+      <div class="service-detail fade-in">
+        <div class="service-detail-img">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80" alt="Procurement" loading="lazy" />
+        </div>
+        <div class="service-detail-content">
+          <span class="section-label">Service 01</span>
+          <h2>Procurement &amp; Sourcing</h2>
+          <p>Sourcing the right product at the right price requires deep market knowledge, established supplier relationships, and the ability to match technical specifications to commercial realities. Tyrian Global excels at exactly this.</p>
+          <p>Our procurement team works with factories across Europe, Turkey, Asia, and the CIS — giving us access to a wide range of product grades, production capacities, and pricing tiers to serve any project requirement.</p>
+          <ul>
+            <li>Global supplier qualification and vetting</li>
+            <li>Technical specification matching and advisory</li>
+            <li>Competitive price discovery across multiple origins</li>
+            <li>Allocation of production capacity for large contracts</li>
+            <li>Regular market reports and price trend analysis</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Shipping -->
+      <div class="service-detail reverse fade-in">
+        <div class="service-detail-img">
+          <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=700&q=80" alt="Shipping" loading="lazy" />
+        </div>
+        <div class="service-detail-content">
+          <span class="section-label">Service 02</span>
+          <h2>Shipping &amp; Logistics</h2>
+          <p>International trade of bulk commodities demands expert logistics management. Tyrian Global handles the full freight cycle — from booking cargo space and coordinating loading to managing port agents and monitoring vessel progress.</p>
+          <p>Whether the cargo moves in bulk vessels, bagged containers, or tanker trucks, our logistics team ensures smooth operations and timely arrivals at your destination.</p>
+          <ul>
+            <li>Full vessel chartering for bulk shipments</li>
+            <li>FCL/LCL container bookings with leading carriers</li>
+            <li>Port agency coordination worldwide</li>
+            <li>Real-time shipment tracking and status updates</li>
+            <li>Demurrage risk management and freight optimization</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Documentation -->
+      <div class="service-detail fade-in">
+        <div class="service-detail-img">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700&q=80" alt="Documentation" loading="lazy" />
+        </div>
+        <div class="service-detail-content">
+          <span class="section-label">Service 03</span>
+          <h2>Trade Documentation</h2>
+          <p>International commodity trade requires a precise set of documents — and errors or omissions can delay cargo, block payment, or create legal complications. Our experienced documentation team ensures every document is correct, complete, and timely.</p>
+          <p>We are proficient in all major trade finance instruments and work seamlessly with banks, freight forwarders, and customs authorities worldwide.</p>
+          <ul>
+            <li>Letters of Credit (LC) — issuance, negotiation, compliance</li>
+            <li>Bills of Lading, Airway Bills, CMR documents</li>
+            <li>Commercial Invoice, Packing List, Weight Certificate</li>
+            <li>Certificates of Origin (EUR.1, Form A, CO)</li>
+            <li>Quality &amp; quantity inspection certificates (SGS, Intertek, BV)</li>
+            <li>Customs export/import documentation</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quality -->
+      <div class="service-detail reverse fade-in">
+        <div class="service-detail-img">
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=700&q=80" alt="Quality Assurance" loading="lazy" />
+        </div>
+        <div class="service-detail-content">
+          <span class="section-label">Service 04</span>
+          <h2>Quality Assurance</h2>
+          <p>Quality is not an afterthought at Tyrian Global — it is embedded at every stage of our supply process. We work exclusively with producers who hold the relevant international certifications, and we verify every shipment through independent, third-party inspection bodies.</p>
+          <p>Our quality process protects your investment and gives you confidence that what you ordered is exactly what you receive.</p>
+          <ul>
+            <li>Pre-shipment inspection by SGS, Intertek, or Bureau Veritas</li>
+            <li>Factory audit and production monitoring for large contracts</li>
+            <li>Laboratory testing of cement grades and steel compositions</li>
+            <li>Comparison of inspection results to purchase specification</li>
+            <li>Rejection and replacement management if quality deviates</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== WHY TYRIAN ===== -->
+  <section style="background:var(--light);">
+    <div class="container">
+      <div class="products-header fade-in">
+        <span class="section-label">Our Advantage</span>
+        <h2 class="section-title">Why Partner with <span>Tyrian Global</span></h2>
+        <p class="section-desc">What sets us apart is not just what we trade, but how we trade — with expertise, integrity, and a genuine commitment to your success.</p>
+      </div>
+      <div class="grid-3">
+        <div class="why-card fade-in" style="flex-direction:column;text-align:left;">
+          <div class="why-icon">⚡</div>
+          <div>
+            <h4>Rapid Response</h4>
+            <p>All inquiries acknowledged within 24 hours. Competitive offers delivered within 48 hours. We respect your time.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in fade-in-delay-1" style="flex-direction:column;">
+          <div class="why-icon">🔐</div>
+          <div>
+            <h4>Secure Transactions</h4>
+            <p>We operate under standard international trade terms (Incoterms) with documentary credit and escrow options available.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in fade-in-delay-2" style="flex-direction:column;">
+          <div class="why-icon">📊</div>
+          <div>
+            <h4>Market Intelligence</h4>
+            <p>We monitor global commodity prices, freight rates, and supply trends — sharing this intelligence with partners to inform better purchasing decisions.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in" style="flex-direction:column;">
+          <div class="why-icon">🌐</div>
+          <div>
+            <h4>Multilingual Team</h4>
+            <p>Our team communicates in English, Turkish, Arabic, and other languages — ensuring no barrier between your needs and our service.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in fade-in-delay-1" style="flex-direction:column;">
+          <div class="why-icon">🤝</div>
+          <div>
+            <h4>Long-Term Relationships</h4>
+            <p>We are not looking for single transactions — we build lasting partnerships built on reliability, transparency, and shared success.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in fade-in-delay-2" style="flex-direction:column;">
+          <div class="why-icon">📦</div>
+          <div>
+            <h4>Flexible Supply Terms</h4>
+            <p>FOB, CFR, CIF, DAP — we accommodate your preferred Incoterms and can structure repeat supply contracts for ongoing projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <span class="section-label">Get Started</span>
+        <h2>Let's Discuss Your Requirements</h2>
+        <p>Share your commodity needs and let our team design a supply solution that works for your project, timeline, and budget.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">Contact Our Team</a>
+          <a href="products.html" class="btn btn-outline">View Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon">T</div>
+            <div class="logo-text">
+              <span class="logo-name">TYRIAN</span>
+              <span class="logo-sub">Global Trading</span>
+            </div>
+          </div>
+          <p>Tyrian Global is a premier international trading company specializing in cement and steel products — connecting reliable suppliers with demanding buyers worldwide.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Email">✉</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Products</h5>
+          <ul>
+            <li><a href="products.html#cement">Grey Cement</a></li>
+            <li><a href="products.html#cement">White Cement</a></li>
+            <li><a href="products.html#cement">Clinker</a></li>
+            <li><a href="products.html#steel">Steel Rebar</a></li>
+            <li><a href="products.html#steel">Steel Billets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Tyrian Global<br/>Dubai, United Arab Emirates</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉</span>
+            <span><a href="mailto:info@tyrian-global.com">info@tyrian-global.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <span><a href="tel:+905000000000">+90 500 000 00 00</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Tyrian Global. All rights reserved.</span>
+        <span>www.tyrian-global.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+services:
+  tyrian-web:
+    build: .
+    container_name: tyrian-global
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # SSL sertifikaları için (certbot sonrası)
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    networks:
+      - tyrian-net
+
+networks:
+  tyrian-net:
+    driver: bridge
